@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:todo_bloc/features/auth/domain/entities/app_user.dart';
 
 class ProfileUser extends AppUser {

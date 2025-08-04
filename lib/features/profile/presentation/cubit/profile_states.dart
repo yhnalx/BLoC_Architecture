@@ -1,4 +1,4 @@
-import 'package:todo_bloc/profile/domain/entities/profile_user.dart';
+import 'package:todo_bloc/features/profile/domain/entities/profile_user.dart';
 
 abstract class ProfileStates {}
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_bloc/features/auth/presentation/cubits/auth_cubit.dart';
-import 'package:todo_bloc/post/components/custom_tile.dart';
-import 'package:todo_bloc/profile/presentation/profile_page.dart';
+import 'package:todo_bloc/features/home/components/custom_tile.dart';
+import 'package:todo_bloc/features/profile/presentation/profile_page.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

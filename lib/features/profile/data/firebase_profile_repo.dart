@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:todo_bloc/profile/domain/entities/profile_user.dart';
-import 'package:todo_bloc/profile/domain/repository/profile_repo.dart';
+import 'package:todo_bloc/features/profile/domain/entities/profile_user.dart';
+import 'package:todo_bloc/features/profile/domain/repository/profile_repo.dart';
 
 class FirebaseProfileRepo implements ProfileRepo {
   final FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
@@ -20,7 +20,7 @@ class FirebaseProfileRepo implements ProfileRepo {
             uid: uid,
             email: userData['email'],
             name: userData['name'],
-            bio: userData['bio'],
+            bio: userData['bio'] ?? '',
             profileImageUrl: userData['profileImageUrl'].toString(),
           );
         }
