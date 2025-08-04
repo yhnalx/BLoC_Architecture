@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:todo_bloc/features/auth/presentation/cubits/auth_cubit.dart';
+import 'package:todo_bloc/post/components/custom_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,15 +9,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("H O M E"),
-        actions: [
-          IconButton(
-            onPressed: () {
-              context.read<AuthCubit>().logout();
-            },
-            icon: Icon(Icons.logout),
-          ),
-        ],
+        centerTitle: true,
       ),
+      drawer: CustomDrawer(),
     );
   }
 }
